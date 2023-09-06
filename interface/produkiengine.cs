@@ -1,7 +1,8 @@
 namespace produk_iengine;
 using iengine;
 
-public class PistonEngine : IEngine {
+public class PistonEngine : IEngine 
+{
 	public void EngineRun() {
 		Console.WriteLine("Piston");
 	}
