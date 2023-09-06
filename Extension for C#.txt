@@ -1,0 +1,39 @@
+Extension for C#
+
+1. C# extension
+2. live share
+3. vscode solution explorer
+4. .net core tes explorer -> untuk unit test 
+5. C# curly formatter
+6. easyzoom
+
+sourcetree -> optional untuk github desktop
+
+C# in a nutshell
+
+C# structure :
+Solutionc : command - dotnet new sln
+ - create project
+ 	command : dotnet new console
+	- program.cs -> source code
+	- project.csproj -> C# project file
+ - run project
+	command : dotnet run -> compile run
+	command : dotnet build -> compile
+
+1. make solution : dotnet new sln
+2. make directiory : mkdir project1
+3. cd
+4. running the project
+5. open vscode
+6. open solution -> click sln 
+7. open sln file 
+8. added
+
+bin -> hasilin output berupa dll atau exe
+
+ignore the bin or obj file using "dotnet new gitignore" with case if we want to push in github
+
+buat blueprint untuk beberapa instances, sehingga jika ada beberapa object sisa buat atau panggil objnya
+
+dotnet6 -> top level statments

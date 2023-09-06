@@ -1,0 +1,74 @@
+static void Main()
+	{
+		PistonEngine piston = new PistonEngine();
+		HydrogenEngine hydrogen = new HydrogenEngine();
+		HamsterEngine hamster = new HamsterEngine();
+		DieselEngine diesel = new DieselEngine();
+		ElectricEngine electric = new ElectricEngine();
+
+		Car car = new Car(hamster);
+	}
+	
+class Car {
+	public IEngine engine;
+	public Car(IEngine engine) 
+	{
+		this.engine = engine;
+	}
+	public void StartEngine() 
+	{
+		engine.EngineRun();
+	}
+}
+
+public interface IEngine 
+{
+	void EngineRun();
+}
+class PistonEngine : IEngine
+{
+	public void EngineRun()
+	{
+		Console.WriteLine("Piston Engine Running");
+	}
+}
+
+class DieselEngine : IEngine
+
+{
+	public void EngineRun()
+	{
+		Console.WriteLine("Diesel Engine Running");
+	}
+}
+
+class ElectricEngine : IEngine
+{
+	public void EngineRun()
+	{
+		Console.WriteLine("Electric Engine Run");
+	}
+
+}
+
+class HydrogenEngine : IEngine
+{
+	public void EngineRun() 
+	{
+		Console.WriteLine("Hydrogen Engine Run");
+	}
+}
+
+class HamsterEngine : IEngine
+
+{
+    public void EngineRun()
+    {
+        Console.WriteLine("Hamster Engine Run");
+    }
+	public void GiveHamsterFood()
+    {
+        Console.WriteLine("Hamster food");
+    }
+}
+

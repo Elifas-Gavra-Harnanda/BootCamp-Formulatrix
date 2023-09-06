@@ -1,0 +1,46 @@
+static void Main() 
+{
+	Cat cibi = new Cat("cibi",1,"yellow");
+	Cat burhan = new Cat("",2,"");
+	Cat susi = new Cat();
+
+	cibi.Meow("loud");
+	cibi.Meow();
+	bool meowStatus = cibi.Meow(0);
+	Console.WriteLine(meowStatus);
+		
+}
+public class Cat
+{
+	public string? name; //nullable
+	public int age;
+	public string? colour;
+
+	public Cat(string name, int age, string colour) //Constructor
+	{
+		this.name = name;
+		this.age = age;
+		this.colour = colour;
+	}
+	public Cat() 
+	{
+		
+	}
+	public void Meow(string sound) //overloading
+	{
+		Console.WriteLine("Meow " + sound);
+	}
+	public void Meow() 
+	{
+		Console.WriteLine("Meow");
+	}
+	public bool Meow(int time) 
+	{
+		if(time > 0) 
+		{
+			Console.WriteLine("Meow " + time + " times");
+			return true;
+		}
+		return false;
+	}
+}

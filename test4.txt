@@ -1,0 +1,12 @@
+Constructor
+	di C# terdapat default contructor
+		class cat {
+			public cat{
+					
+				}
+		}
+
+overload -> method yang sama dengan parameter yang berbeda
+
+pascal case -> method, class, constructor
+camel case -> variabel
