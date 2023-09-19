@@ -23,7 +23,7 @@ class Animal {
 	public Animal(string name, int age) {
 		_name = name;
 		_age = age;
-	}
+	}	
 	public string GetName() { 
 		return _name;
 	}
